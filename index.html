@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe Game</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      .win{
+        background: rgb(134, 23, 214);
+      }
+      .active{
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <section class="min-h-screen min-w-screen max-h-screen max-w-screen flex flex-col items-center justify-center">
+
+ 
+        <h1 class="text-center relative -top-6 text-4xl font-bold ">
+            Tic Tac Toe Game
+        </h1>   
+            <p class="mb-5 font-semibold " id="choice"></p>
+            <div class="grid grid-cols-3 grid-rows-3">
+                <div id="grid" class="h-20 w-20 border flex box1 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box2 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box3 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box4 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box5 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box6 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box7 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box8 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+                <div id="grid" class="h-20 w-20 border flex box9 justify-center items-center text-2xl font-bold cursor-pointer"></div>
+            </div> 
+            <button id="newgame" class="px-2 py-1 bg-blue-400 duration-300 mt-6 hidden rounded-md hover:bg-blue-300">
+              New Game
+            </button>
+          </section>
+        <script src="index.js"></script>
+</body>
+</html>
